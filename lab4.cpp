@@ -1,6 +1,13 @@
+/** \file lab4.cpp
+ *  @todo
+ */
 #include <iostream>
 #include <assert.h>
+
 using namespace std;
+
+//Prototypes
+void enterValues(double nums[], const int size);
 /**
  * 
  */
@@ -18,6 +25,7 @@ int main(){
         switch (choice)
         {
         case 1:
+        enterValues(nums, SIZE);
             break;
         case 2:
             break;
@@ -29,4 +37,16 @@ int main(){
             break;
         }
     }while(choice !=0);
+}
+
+/**
+ * What it does...
+ * @param nums ..
+ * @param size ...
+ */
+void enterValues(double nums[], const int size){
+    for(int i=0; i<size; i++){
+        cout << "\nEnter value at " << i << ": ";
+        cin >> nums[i];
+    }
 }
