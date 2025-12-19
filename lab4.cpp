@@ -37,6 +37,10 @@ int main(){
             if(!first){
                 cerr << "\nMust use option 1 first!\n";
             } else {
+                double avg = avgOfNeg(nums, SIZE);
+                if(avg == 0){
+                    cout << "\nNo negative numbers in the array\n";
+                }
                 cout << "\nThe avg of neg. are: " << avgOfNeg(nums, SIZE) << endl;
             }
             break;
